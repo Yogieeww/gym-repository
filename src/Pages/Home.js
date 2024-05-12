@@ -69,9 +69,7 @@ const Home = () => {
         <FAQs />
         <Transformation />
         <Jointoday />
-         <div style={{ height: '100vh' }}>Content above</div>
-      {/* Use a valid React element like <div> or <footer> */}
-      {/* and attach the ref to it */}
+      
       <div>
         <footer ref={footerRef}>< Footer/></footer>
       </div>
