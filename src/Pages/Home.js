@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../Assets/Frame 90.png";
@@ -12,10 +12,17 @@ import Jointoday from "../Components/Jointoday";
 import FAQs from "../Components/FAQs";
 import Topic from "../Components/Topics/Topics";
 import Transformation from "../Components/Transformation";
+import Footer from "../Components/Footer";
 
 
 
 const Home = () => {
+ const footerRef = useRef(null);
+  const scrollToFooter = () => {
+    if (footerRef.current) {
+      footerRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
   return (
     <section>
       <Container fluid className="home-section" id="home">
@@ -39,8 +46,8 @@ const Home = () => {
               </p>
 
               <div className="gts-btn">
-                <Button href="#" target="_blank" className="gts-btn-inner">
-                  <img src={arrowIcon} className="arrow-icon" />
+                <Button onClick={scrollToFooter} className="gts-btn-inner">
+                  <img src={arrowIcon} alt="arrow" className="arrow-icon" />
                   <div className="getstarted__text">Get Started</div>
                 </Button>
               </div>
@@ -62,6 +69,13 @@ const Home = () => {
         <FAQs />
         <Transformation />
         <Jointoday />
+         <div style={{ height: '100vh' }}>Content above</div>
+      {/* Use a valid React element like <div> or <footer> */}
+      {/* and attach the ref to it */}
+      <div>
+        <footer ref={footerRef}>< Footer/></footer>
+      </div>
+   
       </Container>
     </section>
   );

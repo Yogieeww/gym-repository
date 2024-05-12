@@ -13,7 +13,7 @@ import Footerlogo from "../Assets/logo figma.svg";
 
 const Footer = () => {
   return (
-    <Container fluid className="footer-section" id="footer">
+    <Container  fluid className="footer-section" id="footer">
       <Container>
         <Row>
           <Col md={12} className="footer-social">

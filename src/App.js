@@ -4,14 +4,13 @@ import Home from "./Pages/Home";
 // import Aboutus from "./Pages/Aboutus";
 // import Navbar from "./Components/Navbar"
 import ScrollToTop from "./Components/ScrollToTop";
-import Footer from "./Components/Footer";
 // import Login from "./Components/Login"
 
 import {
   BrowserRouter as Router,
   Route,
   Routes,
-  Navigate,
+  
 } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -30,7 +29,6 @@ const App = () => {
           <Route path="*" element={<Navigate to="/" />} />
           <Route path="login" element={<Login />} /> */}
         </Routes>
-        <Footer />
       </Router>
     </>
   );
