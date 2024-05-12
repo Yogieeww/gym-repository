@@ -17,7 +17,7 @@ const Benefits = () => {
           <Col md={6} className="support">
             <img
               src={supportIcon}
-              alt=""
+              alt="support pic"
               className="img-fluid"
               style={{ maxHeight: "70px" }}
             />
@@ -31,7 +31,7 @@ const Benefits = () => {
           <Col md={6} className="support">
             <img
               src={toolsandTrainingIcon}
-              alt=""
+              alt="tools and training pic"
               className="img-fluid"
               style={{ maxHeight: "70px" }}
             />
@@ -47,7 +47,7 @@ const Benefits = () => {
           <Col md={6} className="support">
             <img
               src={conveienceIcon}
-              alt=""
+              alt="convenience pic"
               className="img-fluid"
               style={{ maxHeight: "70px" }}
             />
@@ -60,7 +60,7 @@ const Benefits = () => {
           <Col md={6} className="support">
             <img
               src={communityIcon}
-              alt=""
+              alt="community pic"
               className="img-fluid"
               style={{ maxHeight: "70px" }}
             />

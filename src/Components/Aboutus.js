@@ -39,7 +39,7 @@ const tiltRef = useTilt({
           <Col md={6}>
             <img
               src={MajinImg}
-              alt="home pic"
+              alt="about pic"
               className="img-fluid"
               style={{ maxHeight: "450px" }}
             />
