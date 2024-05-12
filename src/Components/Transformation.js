@@ -18,22 +18,22 @@ const Transformation = () => {
         </h2>
         <Row className="g-3">
           <Col md={3} className="transformation-pics">
-            <img src={krish} alt="" style={{ width: "270px" }} />{" "}
+            <img src={krish} alt="krish" style={{ width: "270px" }} />{" "}
           </Col>
           <Col md={3} className="transformation-pics">
-            <img src={ashwin} alt="" style={{ width: "270px" }} />{" "}
+            <img src={ashwin} alt="ashwin" style={{ width: "270px" }} />{" "}
           </Col>
           <Col md={3} className="transformation-pics">
             <img
               src={yogi}
-              alt=""
+              alt="yogi"
               style={{ width: "270px",  }}
             />{" "}
           </Col>
           <Col md={3} className="transformation-pics">
             <img
               src={babu}
-              alt=""
+              alt="babu"
               style={{ width: "270px",  }}
             />{" "}
           </Col>
