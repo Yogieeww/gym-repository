@@ -76,7 +76,7 @@ function NavBar() {
                 to="/login"
                 className="fork-btn-inner"
               >
-                <img src={navUserLogo} className="nav_user-icon" />
+                <img src={navUserLogo} alt="arrow pic" className="nav_user-icon" />
                 <div className="nav_login__btn">login</div>
               </Button>
             </Nav.Item>

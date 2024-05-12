@@ -56,7 +56,7 @@ const Home = () => {
             <Col md={5} className="g-3" style={{ paddingBottom: 20 }}>
               <img
                 src={homeLogo}
-                alt="home pic"
+                alt="amico"
                 className="img-fluid"
                 style={{ maxHeight: "450px" }}
               />
