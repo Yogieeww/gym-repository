@@ -10,7 +10,7 @@ const Jointoday = () => {
           <Col md={6} >
             <img
               src={joinToday}
-              alt=""
+              alt="join today"
               className="img-fluid"
               style={{ maxHeight: "500px" }}
             />
