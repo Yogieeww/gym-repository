@@ -6,10 +6,10 @@ import Home from "./Pages/Home";
 import ScrollToTop from "./Components/ScrollToTop";
 // import Login from "./Components/Login"
 
+
+
 import {
   BrowserRouter as Router,
-  Route,
-  Routes,
   
 } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -17,18 +17,20 @@ import "./App.css";
 import "./style.css";
 
 const App = () => {
+
   return (
     <>
       <Router>
         <ScrollToTop />
+        <Home />
         {/* <Navbar /> */}
-        <Routes>
+        {/* <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/plans" element={<Plans />} />
+          <Route path="/plans" element={<Plans />} />
           <Route path="/aboutus" element={<Aboutus />} />
           <Route path="*" element={<Navigate to="/" />} />
-          <Route path="login" element={<Login />} /> */}
-        </Routes>
+          <Route path="login" element={<Login />} />
+        </Routes> */}
       </Router>
     </>
   );

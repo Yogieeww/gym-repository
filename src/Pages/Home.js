@@ -6,13 +6,14 @@ import Particle from "../Components/Particle";
 import homeLogo from "../Assets/Gym-amico.svg";
 import Button from "react-bootstrap/Button";
 import arrowIcon from "../Assets/arrow-icon.png";
+import Footer from "../Components/Footer";
+import Topic from "../Components/Topics/Topics";
 import Aboutus from "../Components/Aboutus";
 import Benefits from "../Components/Benefits";
 import Jointoday from "../Components/Jointoday";
 import FAQs from "../Components/FAQs";
-import Topic from "../Components/Topics/Topics";
 import Transformation from "../Components/Transformation";
-import Footer from "../Components/Footer";
+
 
 
 
@@ -69,11 +70,11 @@ const Home = () => {
         <FAQs />
         <Transformation />
         <Jointoday />
-      
-      <div>
-        <footer ref={footerRef}>< Footer/></footer>
-      </div>
-   
+        <div>
+          <footer ref={footerRef}>
+            <Footer />
+          </footer>
+        </div>
       </Container>
     </section>
   );

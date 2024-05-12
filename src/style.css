@@ -13,7 +13,10 @@ html {
 
   --imp-text-color: #14ff8e;
 }
-
+@font-face {
+  font-family: ObelixPro;
+  src: url("./obelixpro/ObelixProB-cyr.ttf");
+}
 .green {
   color: var(--imp-text-color) !important;
 }
@@ -140,12 +143,11 @@ button:focus {
   opacity: 0.9 !important;
 }
 
-@media (max-width: 770px){
-   .navbar-nav ,.nav-item a  {
-  font-size: 11.3px !important;
- 
- }
- 
+@media (max-width: 770px) {
+  .navbar-nav,
+  .nav-item a {
+    font-size: 11.3px !important;
+  }
 }
 @media (max-width: 768px) {
   .navbar {
@@ -162,21 +164,20 @@ button:focus {
   } */
 }
 
-
-
 @media (max-width: 768px) {
   .nav-link {
     padding: 0.7rem 1rem !important;
   }
-  .nav-item ,.nav-link {
+  .nav-item,
+  .nav-link {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-   .navbar-nav ,.nav-item a  {
-  font-size: 11.3px !important;
- }
- 
+  .navbar-nav,
+  .nav-item a {
+    font-size: 11.3px !important;
+  }
 }
 
 .navbar-brand {
@@ -197,8 +198,6 @@ button:focus {
 .nav-link {
   padding: 0.8rem 1rem !important;
 }
-
-
 
 .navbar-nav .nav-item {
   position: relative;
@@ -326,7 +325,7 @@ button:focus {
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
-  padding-top: 3  0px !important;
+  padding-top: 3 0px !important;
   object-fit: cover;
 }
 
@@ -334,7 +333,6 @@ button:focus {
   padding: 0rem 0 2rem !important;
   color: whitesmoke;
   text-align: left;
-
 }
 
 .heading-name {
@@ -394,22 +392,43 @@ button:focus {
   background-color: #464646d7 !important;
   border-color: #14ff8e !important;
 }
-
-@media (max-width:320px){
-  .gts-btn-inner{
-   width: 55%;
-   
+@media (max-width: 1024px) {
+  .gts-btn-inner {
+     width: 55%;
+    
+  }
+  .getstarted__text {
+    font-size: 12px;
+    margin-top: 2px;
+  }
+  .arrow-icon {
+    width: 45px;
+  }
+}
+@media (max-width: 440px) {
+  .gts-btn-inner {
+     width: 55%;
+    
   }
   .getstarted__text {
     font-size: 10px;
-   
+    margin-top: 2px;
   }
-  .arrow-icon{
+  .arrow-icon {
     width: 30px;
   }
 }
-
-
+@media (max-width: 320px) {
+  .gts-btn-inner {
+    width: 55%;
+  }
+  .getstarted__text {
+    font-size: 10px;
+  }
+  .arrow-icon {
+    width: 30px;
+  }
+}
 
 /* --------- */
 /* Topics*/
@@ -441,7 +460,6 @@ button:focus {
   /* transform: scale(1.02) !important; */
   overflow: hidden !important;
   box-shadow: 0 4px 4px 5px rgba(10, 255, 90, 0.561) !important;
- 
 }
 .card-title {
   font: 900 25px Nunito Sans;
@@ -555,9 +573,8 @@ button:focus {
   color: #acacac;
 }
 
-
-@media (max-width:320px){
-  .blur-rectangle > p{
+@media (max-width: 320px) {
+  .blur-rectangle > p {
     font-size: 12px;
   }
 }
@@ -617,6 +634,11 @@ button:focus {
   /* background: #521a49; */
   border-radius: 50px;
 }
+.faq-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .faqs-content > h2 {
   color: white;
   font: 900 25px ObelixPro;
@@ -629,7 +651,7 @@ button:focus {
   background-color: rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(16px);
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 1rem;
   cursor: pointer;
 }
@@ -639,8 +661,6 @@ button:focus {
   border: transparent !important;
   color: #14ff8e;
   font-size: 1.7rem;
-  float: right;
-  margin-top: -7%;
   cursor: pointer;
 }
 .faqs-strip {
@@ -652,13 +672,13 @@ button:focus {
 }
 
 .faq:hover {
-  transform: translateY(2px) !important;
+  transform: translateY(-2px) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(10, 255, 90, 0.561) !important;
+  box-shadow: 0 4px 4px 5px #14ff8e !important;
 }
 .faq p {
   margin-top: 1.5rem;
-  color: #0aff5a;
+  color: #14ff8e;
   font-family: Nunito;
 }
 
@@ -768,9 +788,9 @@ button:focus {
   color: #d7d7d7;
 }
 
-@media (max-width:320px) {
-  .social-icons{
-    padding: 10px 30px;
+@media (max-width: 440px) {
+  .social-icons {
+    padding: 10px;
   }
 }
 
@@ -781,7 +801,6 @@ button:focus {
 }
 .login-heading {
   padding-top: 40px !important;
-
 }
 .login-heading h3 {
   background: linear-gradient(50deg, #0f0 5.08%, #d601dc 95.79%);
@@ -812,7 +831,6 @@ button:focus {
 
 .login-header-right {
   padding-top: 1rem;
-
 }
 .login__rectangle {
   border-style: solid;
@@ -862,7 +880,7 @@ button:focus {
 .input-container input:valid ~ label {
   top: 0;
   font-size: 12px;
-  background: #190C3A;
+  background: #190c3a;
 }
 
 .input-container > input:hover {
@@ -872,7 +890,7 @@ button:focus {
 .input-container > input:focus {
   border-color: #14ff8e;
 }
-.toggle-password-visibility{
+.toggle-password-visibility {
   font-size: 15px;
   color: #14ff8e;
   position: absolute;
@@ -907,7 +925,6 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .loginui-btn-inner {
@@ -926,7 +943,6 @@ button:focus {
   font-size: 12px;
   color: #14ff8e;
   font-weight: 700;
-
 }
 
 .loginui-btn-inner:hover {
@@ -946,16 +962,16 @@ button:focus {
   font: 100 15px ObelixPro;
 }
 
-.fgp{
+.fgp {
   margin-top: 1rem;
 }
-.fgp > a{
+.fgp > a {
   font: 100 15px Nunito;
   letter-spacing: 1px;
   text-decoration: none;
-  color: #cacaca; 
+  color: #cacaca;
 }
-.dha__container{
+.dha__container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -963,39 +979,67 @@ button:focus {
   margin-top: 1rem;
   gap: 5px;
 }
-.dha-text{
+.dha-text {
   font: bold 15px Nunito;
   color: #ffffff;
 }
-.dha__container > a{
+.dha__container > a {
   color: #14ff8e;
   font: bold 15px Nunito;
   text-decoration: none;
 }
 
-@media (max-width:320px){
-  .input-container> input{
-  width: 30vh;
-  height: 45px;
-  font-size: 15px;
+@media (max-width: 320px) {
+  .input-container > input {
+    width: 30vh;
+    height: 45px;
+    font-size: 15px;
   }
-  .loginui-btn{
+  .loginui-btn {
     margin-left: -5%;
   }
 }
 
-.transformation-section{
+/* TRANSFORMATION */
+
+.transformation-section {
   padding-top: 40px;
-  
+  justify-content: center;
+  padding-bottom: 30px;
 }
-.transformation-pics{
-  padding-top: 100px;
-  padding-bottom: 150px;
-  
+
+.transformation-pics {
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
-.transformation-content h2{
-text-align: center;
-font: 100 30px ObelixPro;
-color: white;
-letter-spacing: 1px;
+.transformation-content strong {
+  text-align: center;
+  font: 100 25px ObelixPro;
+  color: white;
+  letter-spacing: 1px;
+}
+.transformation-content h2 {
+  text-align: center;
+  font: 100 25px ObelixPro;
+  color: white;
+  letter-spacing: 1px;
+}
+
+@media (width: 320px) {
+  .transformation-content h2 {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+@media (width: 320px) {
+  .transformation-content strong {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+@media (width: 768px) {
+  .transformation-pics {
+    padding: 2rem 15rem;
+  }
 }

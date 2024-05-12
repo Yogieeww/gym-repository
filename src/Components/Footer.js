@@ -21,7 +21,7 @@ const Footer = () => {
               Connect <strong className="green">With</strong>
             </h1>
             <p>
-              Feel free to <span className="green">connect </span>with me
+              Feel free to <span className="green">connect </span>with us
             </p>
             <ul className="footer-social-links">
               <li className="social-icons">

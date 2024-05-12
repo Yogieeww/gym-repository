@@ -13,13 +13,13 @@ const FAQ = (props) => {
       className="faq "
       onClick={() => setIsAnswerShowing((prev) => !prev)}
     >
-      <div>
+      <div className="faq-content">
         <h3>{props.question}</h3>
         <button className="faq__icon">
           {isAnswerShowing ? <AiOutlineMinus /> : <AiOutlinePlus />}
         </button>
-        {isAnswerShowing && <p>{props.answer} </p>}
       </div>
+      {isAnswerShowing && <p>{props.answer} </p>}
     </article>
   );
 };
